@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php echo 'hola como va'
-        // put your code here
-        ?>
-    </body>
-</html>
+<?php
+
+session_start();
+
+require_once 'config/Config.php';
+require_once Config::get_value('adodb', 'adodb.inc.php');
+require_once Config::get_value('dbconnection', 'MySqlConnectionManager.php');
+require_once Config::get_value('smarty', 'Smarty.class.php');
+require_once Config::get_value('template', 'TemplateUtils.php');
+//require_once 'classes/model/DataAccessModel.php'; /* General model class. */
+//require 'classes/controller/FrontController.php'; /* Application front controller. */
+
+//if (!isset($_GET['route'])) {
+//    $_GET['route'] = 'home';
+//}
+//
+//$frontController = new FrontController(new Router(), $_GET['route'], isset($_GET['action']) ? $_GET['action'] : null);
+//echo $frontController->output();
+?>
