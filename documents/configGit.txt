@@ -1,0 +1,37 @@
+<?php
+/**
+ * @package documents
+ * @version 1.0
+ * @author Luis Alberto Vega <vla200632213@gmail.com>
+ */
+?>
+Este archivo de configuracion es para que puedan agregar usuario, email a git
+alias con abreviaturas que se agregan para evitar escribir todo el comando 
+completo Ej: git st === git status, para el que este utilizando consola de git
+la configuracion la pueden agregar abriendo la consola de git
+- vim .gitconfig 
+- copian linea a linea la configuracion, es como una consola linux en resumen
+ cualquier duda en trello por favor.
+ 
+NOTA: Agregue una imagen ConfigGit.jpg, es como tendria que quedar la configuracion,
+seria bueno que agreguemos alias a los commit:
+EJ: commit -m "LV: mensaje del commit"
+LV: Luis Vega, MS: Manfredo Sanchéz, JM: Jorge Mostajo, NV: Nelson Vallejos, SL: Silvia Landivar.
+
+[user]
+	name = Luis Vega
+	email = luis.vega@people-trust.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ls-deleted = ls-files --deleted
+	last = cat-file commit HEAD
