@@ -3,12 +3,11 @@
 session_start();
 
 require_once 'config/Config.php';
-require_once Config::get_value('adodb', 'adodb.inc.php');
-require_once Config::get_value('dbconnection', 'MySqlConnectionManager.php');
-require_once Config::get_value('smarty', 'Smarty.class.php');
-require_once Config::get_value('template', 'TemplateUtils.php');
-require_once 'classes/model/DataAccessModel.php'; /* General model class. */
-require 'classes/controller/FrontController.php'; /* Application front controller. */
+require_once Config::getValue('smarty', 'Smarty.class.php');
+require_once Config::getValue('template', 'TemplateManager.php');
+require_once Config::getValue('view', 'View.php');
+require_once Config::getValue('controller', 'FrontController.php');
+
 
 if (!isset($_GET['route'])) {
     $_GET['route'] = 'home';
@@ -16,4 +15,5 @@ if (!isset($_GET['route'])) {
 
 $frontController = new FrontController(new Router(), $_GET['route'], isset($_GET['action']) ? $_GET['action'] : null);
 echo $frontController->output();
+
 ?>
