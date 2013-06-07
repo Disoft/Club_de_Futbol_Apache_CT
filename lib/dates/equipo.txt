@@ -1,0 +1,4 @@
+equipoId, nombre, historia, vision, delegadoId, eliminado
+100001,Apache C+ Turbo,Equipo de la LDCCT con 3 anios de trayectoria,Llegar a ser campeon de la LDCCT,100001,0
+100002,Club PHP,Equipo de la LDCCT con 2 anios de trayectoria,Llegar a ser campeon de la LDCCT,100002,0
+___end___
