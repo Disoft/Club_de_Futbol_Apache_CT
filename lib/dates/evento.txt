@@ -1,0 +1,4 @@
+eventoId, titulo, descripcion, publicacion, conclusion, equipoId, eliminado
+100001,Fiesta Apertura del Equipo,Fiesta apertura del equipo cantina libre,10-06-2013,10-07-2013,100001,0
+100002,Reunion de socios del club,Reunion de urgencia para eleccion de la nueva directiva,01-07-2013,10-07-2013,100001,0
+___end___

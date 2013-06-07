@@ -8,6 +8,7 @@ include_once 'DataAccess.php';
 require_once 'Delegado.php';
 require_once 'Jugador.php';
 require_once 'Galeria.php';
+require_once 'Evento.php';
 include_once '../persistence/Collection.php';
 include_once '../persistence/IEntity.php';
 include_once '../persistence/OneToOne.php';
@@ -118,6 +119,11 @@ class Equipo extends DataAccess implements IEntity{
     public function getGalerias() {
         return $this->getRelationOneToMany('Galeria');
     }
+    
+    public function getEventos() {
+        return $this->getRelationOneToMany('Evento');
+    }
+    
      /**
      * return of date of the Class
      * @param type $id integer
@@ -151,7 +157,7 @@ class Equipo extends DataAccess implements IEntity{
 
     public function update() {
         
-    }    //put your code here
+    }  
     
     private function loadFields() {
         $this->collectionFieldsObject = new Collection(get_object_vars($this));
@@ -209,5 +215,5 @@ class Equipo extends DataAccess implements IEntity{
         return $relationAll;
     }
 }
-
+ 
 ?>
