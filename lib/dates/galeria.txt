@@ -1,0 +1,4 @@
+galeriaId, nombre, equipoId, eliminado
+100001,jugadores,100001,0 
+100002,directiva,100001,0
+___end___
