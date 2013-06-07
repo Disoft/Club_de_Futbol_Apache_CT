@@ -26,6 +26,11 @@ class Foto extends DataAccess implements IEntity{
     private $path;
     
     /**
+     * @var integer
+     */
+    private $galeriaId;
+
+    /**
      * @var boolean
      */
     private $eliminado;
@@ -57,6 +62,14 @@ class Foto extends DataAccess implements IEntity{
 
     public function setPath($path) {
         $this->path = $path;
+    }
+
+    public function getGaleriaId() {
+        return $this->galeriaId;
+    }
+
+    public function setGaleriaId($galeriaId) {
+        $this->galeriaId = $galeriaId;
     }
 
     public function getEliminado() {
@@ -117,7 +130,4 @@ class Foto extends DataAccess implements IEntity{
      }
 }
 
-    $foto = new Foto();
-    $foto->find(100001);
-    var_dump(print_r($foto->findAll()));
 ?>

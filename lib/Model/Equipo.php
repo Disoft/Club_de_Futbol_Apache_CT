@@ -7,6 +7,7 @@
 include_once 'DataAccess.php';
 require_once 'Delegado.php';
 require_once 'Jugador.php';
+require_once 'Galeria.php';
 include_once '../persistence/Collection.php';
 include_once '../persistence/IEntity.php';
 include_once '../persistence/OneToOne.php';
@@ -114,6 +115,9 @@ class Equipo extends DataAccess implements IEntity{
         return $this->getRelationOneToMany('Jugador');
     }
 
+    public function getGalerias() {
+        return $this->getRelationOneToMany('Galeria');
+    }
      /**
      * return of date of the Class
      * @param type $id integer
@@ -206,7 +210,4 @@ class Equipo extends DataAccess implements IEntity{
     }
 }
 
-  $equipo = new Equipo();
-  $equipo->find(Equipo::ID_EQUIPO_SYSTEM);
-  var_dump($equipo->getJugadores());
 ?>

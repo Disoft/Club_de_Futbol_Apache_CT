@@ -1,5 +1,5 @@
-fotoId, descripcion, path, eliminado
-100001,jugador1,Club_de_Futbol_Apache_CT\documents\images\jugador1.JPG,0
-100002,jugador2,Club_de_Futbol_Apache_CT\documents\images\jugador2.JPG,0
-100003,jugador3,Club_de_Futbol_Apache_CT\documents\images\jugador3.JPG,0
+fotoId, descripcion, path, galeriaId, eliminado
+100001,jugador1,Club_de_Futbol_Apache_CT\documents\images\jugador1.JPG,100001,0
+100002,jugador2,Club_de_Futbol_Apache_CT\documents\images\jugador2.JPG,100001,0
+100003,jugador3,Club_de_Futbol_Apache_CT\documents\images\jugador3.JPG,100001,0
 ___end___
