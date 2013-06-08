@@ -1,0 +1,6 @@
+ jugadorId, nrocamiseta, nombres, apellidos, apodo, posicionId, nacimiento, equipoId,eliminado
+100001,1,Luis Alberto,Vega,vega,5,01-04-1995,100001,0
+100002,5,Jorge B.,Mostajo,gordo,3,01-04-1995,100002,0
+100003,4,Manfredo,Sanchéz,toto,6,01-04-1995,100002,0
+100004,9,Benito,Camela,bento,4,01-04-1995,100001,0
+___end___

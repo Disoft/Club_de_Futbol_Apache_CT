@@ -16,11 +16,11 @@ final class Config {
      * @return type array containing the selected section.
      * @throws Exception if the given section doesn't exist in the config.ini file.
      */
-    public static function get_section($section = null) {
+    public static function getSection($section = null) {
         if ($section === null) {
-            return self::get_data();
+            return self::_getData();
         } else {
-            self::get_data();
+            self::_getData();
             if (array_key_exists($section, self::$_data)) {
                 return self::$_data[$section];
             } else {
@@ -29,7 +29,7 @@ final class Config {
         }
     }
     
-    public static function get_value($section, $key) {
+    public static function getValue($section, $key) {
         if ($section === null) {
             throw new Exception ('Must specify a section');
         }
@@ -37,7 +37,7 @@ final class Config {
             throw new Exception('Must specify a key');
         }
         
-        $tempArray = self::get_section($section);
+        $tempArray = self::getSection($section);
         
         if (array_key_exists($key, $tempArray)) {
             return $tempArray[$key];
@@ -46,7 +46,7 @@ final class Config {
         }
     }
 
-    private static function get_data() {
+    private static function _getData() {
         if (self::$_data != null) {
             return self::$_data;
         } else {
