@@ -1,0 +1,4 @@
+delegadoId, nombres, apellidos, eliminado
+100001,Diego,Antequera,0
+100002,Juan antonio,Manolo,0
+___end___

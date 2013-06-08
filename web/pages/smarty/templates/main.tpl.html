@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{$pageTitle}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        {foreach item=stylesheet from=$styles}
+        <link rel="stylesheet" href="{$stylesheet}" type="text/css"/>
+        {/foreach}
+        {foreach item=script from=$scripts}
+        <script src="{$script}"></script>
+        {/foreach}
+    </head>
+    <body>
+        <div id="dv_wrapper">
+            <div id="dv_header">
+                <img id="img_logo" title="{$logoTitle}" src="{$logoUrl}">
+            </div>
+            <div id="dv_container">
+                <div id="dv_left">
+                    This is the left panel.
+                </div>
+                {$content|default:''}
+            </div>
+            <div id="dv_footer">
+                2013 - Apache F&uacute;tbol Club. Todos los derechos reservados.
+            </div>
+        </div>
+    </body>
+</html>
