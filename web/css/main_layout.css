@@ -1,0 +1,29 @@
+/* 
+    Document   : main_layout
+    Created on : 08-06-2013, 12:23:25 AM
+    Author     : Manfredo Sánchez
+    Description:
+        Defines the main layout of the web site.
+*/
+
+div {
+    border: 1px solid;
+}
+
+#dv_wrapper {
+    margin: 0px auto;
+    width: 900px;
+}
+
+#dv_left {
+    float: left;
+    width: 200px;
+}
+
+#dv_content {
+    margin-left: 210px;
+}
+
+#dv_footer {
+    clear: both;
+}
